@@ -1,0 +1,3 @@
+document.getElementById('host').value+ "<br>";
+
+document.getElementById('brg').innerHTML= oi ;

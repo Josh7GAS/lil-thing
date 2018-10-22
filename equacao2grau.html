@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equação de 2°</title>
+</head>
+
+<body>
+    A <input type="number" id="a">
+    B <input type="number" id="a">
+
+    <button ondblclick=" faz()">Calcular</button>
+    <p id="b"></p>
+
+    <script>
+        function faz() {
+            mostraresultado(
+                equacao2grau(
+                    getNumero("a"),
+                    getNumero("b"),
+                    defineC()));
+        }
+        function mostraresultado(msg) {
+            
+            parseInt(document.getElementById("b").innerHTML = msg);
+        }
+        function getNumero(id) {
+            return parseFloat(
+                document.getElementById(id).value
+            );
+        }
+        function defineC() {
+            return  Math.floor(Math.random() * 1001.1);
+        }
+        function equacao2grau(a, b, c) {
+            c = defineC;
+            if (a != 0)
+                return ((b * b) - 4*a*c);
+            else
+                return "ERRO!";
+        }   
+    </script>
+
+</body>
+
+</html>

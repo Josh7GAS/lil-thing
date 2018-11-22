@@ -1,0 +1,15 @@
+projeto-urgente
+node.js-intermediario	
+tcc-feriadao
+pn- intermediario
+gatt- até domingo(pelo menos 1 hora por dia até domingo)
+banco de dados - revisar e documentar
+
+eu posso fazer a mesma logiaca de  criar um grafico a partir de um BD para gerar o relatorio via node.
+
+ele só vai fazer o relatorio quando solicitado, e puxara a media dos ultimos tempos.
+
+
+-pegar media no armazenamento e prpoduzir arquivo via node.js
+
+média temp médiaumi

@@ -1,0 +1,7 @@
+node em nuvem. 
+-Analitycs
+-minimizar o armazenamento de nuvem e o preço
+-historico de média
+-novos. 
+-aprofundar nas questões de nuvem.
+-dashboard tabela analytics= min, med, max,   

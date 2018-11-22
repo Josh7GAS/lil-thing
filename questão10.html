@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>training</title>
+</head>
+
+<body>
+    Idade: <input type="number" name="" id="ide"><br><br>
+
+    Sexo: <select id="genero">
+
+        <option value="Homem">Homem</option>
+        <option value="Mulher">Mulher</option>
+    </select>
+
+    <button onclick="faca()">Check</button>
+
+    <p id="oi"></p>
+    <script>
+
+        var msg = " ";
+        var age = 0;
+        var id = " ";
+        var tkt = 20;
+        var guarda = new Array(tkt);
+        var contticket = 0;
+
+        function mensagem(msg) {
+            document.getElementById("oi").innerHTML = msg;
+        }
+
+        function getIdade(age) {
+            return parseInt(document.getElementById("ide").value)=age;
+        }
+        function gnr(id) {
+            id = document.getElementById("genero").value;
+        }
+        function ticket(tkt, tkt1) {
+            tkt =
+                Math.floor((Math.random() * 20));
+            // tkt1 = tkt.toFixed(0);
+        }
+        function guardaTicket(guarda) {
+           if (contticket< tkt ){
+               guarda[contticket] = novoticket;
+               contticket++;
+
+           }
+        }
+
+            function faca() {
+                mensagem(id+age+guardaTicket.guarda);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

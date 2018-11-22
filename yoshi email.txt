@@ -1,0 +1,9 @@
+yoshi perguntas 
+
+professor, boa tarde.
+
+como conversamos sobre o projeto da emissão de relatório (csv, PDF, exccel) pretendo seguir a seguinte lógica: 1 passo pegar os dados da media que é guardada na memória do azure via API e usando o "FS" do node gerar o relatorio utilizando o Ajaxpara gerar os objetos do relatorio e a colocação das informações.
+
+como poderiamos começar? tenho estudado Node intensamente e o que não sober consigo aprender.
+
+desde já obrigado e desculpe a intromissão.    

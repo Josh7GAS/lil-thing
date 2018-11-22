@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Jogo das Equações</title>
+</head>
+
+<body>
+
+A : <input type="text" id="cTInA"> <br>
+B : <input type="text" id="cTInB"> <br>
+
+<button onclick="minhaFuncao()"> Jogar</button>
+
+<p id="resultado"></p>
+
+<script>
+function exibeResultado(msg) {
+document.getElementById("resultado").innerHTML = msg;
+}
+function getNumeroFloat(id) {
+return parseFloat(
+document.getElementById(id).value
+);
+}
+
+function defineC(){
+return Math.random() * 1000.1;
+}
+
+function defineDelta(a, b, c){
+return (b * b) - 4 * a * c;
+}
+
+function minhaFuncao() {
+
+var a = getNumeroFloat("cTInA");
+var b = getNumeroFloat("cTInB");
+var c = defineC();
+var delta = defineDelta(a, b, c);
+if (delta > 0){
+exibeResultado( a + "xˆ2 + " + b + "x + " + c +" = 0"
++ "<br> :-) ");
+}
+else {
+exibeResultado(a + "xˆ2 + " + b + "x + " + c +" = 0"
++ "<br> :-( ");
+}
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validação da Entrada</title>
+</head>
+
+<body>
+    Idade: <input id="ida" type="number"><br><br>
+
+    Sexo: <select id="genero">
+
+        <option value="Homem">Homem</option>
+        <option value="Mulher">Mulher</option>
+    </select>
+    <br><br>
+    <button onclick="valida()">Emitir Ticket</button>
+
+    <p id="oi"></p>
+
+    <script>
+
+
+        function valida() {
+
+            var idade,
+                ticket,
+                sexo,
+                mostra,
+                i,
+                a;
+
+
+            var ticket = Math.floor(Math.random() * 20);
+            var tikt = ticket.toFixed(0);
+            var idade = document.getElementById("ida").value;
+            var sexo = document.getElementById("genero").value;
+            var mostra = document.getElementById("oi").innerHTML;
+            var erro = " <br>";
+            var tkt = 20;
+            var guarda = new Array(tkt);
+            var contticket = 0;
+
+            if (idade < 60 || idade > 100) {
+
+                erro = erro += alert("Não Pode entrar na balada!")
+
+            }
+
+            // a.push(idade);
+            // b.push(sexo);
+
+            //   for (i = 0; i <= 20; i++) {
+            if (sexo == "Mulher") {
+
+                mostra = document.getElementById("oi").innerHTML = "Sra seu Ticket é o n°: " + tikt + + "<br>";
+                a.push(mostra);
+                mostra += a;
+
+            } else {
+                if (sexo == "Homem") {
+                    mostra = document.getElementById("oi").innerHTML = "Sr seu Ticket é o n°: " + tikt + "<br>";
+                    a.push(mostra);
+                    mostra += a;
+                }
+            }
+            //a.push(mostra);
+
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
